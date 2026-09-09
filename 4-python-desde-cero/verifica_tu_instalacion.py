@@ -1,0 +1,14 @@
+import sys
+import os
+import platform
+
+version = sys.version
+sistema = platform.system() + " " + platform.release()
+directorio = os.getcwd()
+
+print(f"Python: {version}")
+print(f"Sistema: {sistema}")
+print(f"Directorio: {directorio}")
+
+version_ok = sys.version_info >= (3, 10)
+print(f"Version 3.10+? {version_ok}")  
